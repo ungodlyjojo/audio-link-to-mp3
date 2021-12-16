@@ -18,6 +18,10 @@ main {
     width: 100%;
 }
 
+.hero {
+  background-image: url("https://images.app.goo.gl/yQYTTD9XRa1FVuAd7");
+}
+
 p {
   font-size: 1.5rem;
 }
