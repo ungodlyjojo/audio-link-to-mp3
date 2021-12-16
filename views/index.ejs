@@ -12,30 +12,35 @@
     <title>YouTube 2 MP3 Converter</title>
   </head>
   <body>
-    
+    <!-- Top Container w Title & input field-->
     <div class="top-container">
-        <form action="convert-mp3 method="POST" id="form">
-            <h1><i class="fab fa-youtube"></i>YouTUbe 2 MP3 Converter</h1>
-            <h4>Enter the Video ID</h4>
-            <div>
-                <input type=" name="videoID" placeholder="Video ID"><button id="convert-btn">convert</button>
-            </div>
-        </form>
+      <form action="/convert-mp3" method="POST" id="form">
+        <h1><i class="fab fa-youtube"></i>YouTUbe 2 MP3 Converter</h1>
+        <h4>Enter the Video ID</h4>
+        <div>
+          <input type=" name="videoID" placeholder="Video ID"><button
+            id="convert-btn"
+          >
+            convert
+          </button>
+        </div>
+      </form>
     </div>
-
+    <!-- Bottom Container for error message/download link-->
     <div class="bottom-container">
-        <% if(typeof success != "undefined" && success) { %>
-            <div class="success">
-                <p><%= song_title %></p>
-                <a href="<%= song_link  %>"><button id="download-btn">DOWNLOAD</button></a>
-                <link rel="stylesheet" href="">
-            </div>
-        <% } else if(typeof success != "undefined" && !success) {%>
-            <div class="errors">
-                <p><%= message %></p>
-            </div>
-        <% } %>
+      <% if(typeof success != "undefined" && success) { %>
+      <div class="success">
+        <p><%= song_title %></p>
+        <a href="<%= song_link  %>"
+          ><button id="download-btn">DOWNLOAD</button></a
+        >
+        <link rel="stylesheet" href="" />
+      </div>
+      <% } else if(typeof success != "undefined" && !success) {%>
+      <div class="errors">
+        <p><%= message %></p>
+      </div>
+      <% } %>
     </div>
-  
-</body>
+  </body>
 </html>
