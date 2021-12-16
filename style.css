@@ -1,3 +1,11 @@
+:root {
+  --primary: #91b69e;
+  --secondary: #9caea9;
+  --tertiary: #668c8c;
+  --light-dark: #a29e9d;
+  --dark: #8e5d51;
+  --border-radius: .3rem;
+}
 
 * {
     box-sizing: border-box;
@@ -18,14 +26,63 @@ main {
     width: 100%;
 }
 
-.hero {
-  background-image: url("audio-link-mp3-hero-image.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 800px;
-  width: 80%;
-  margin-bottom: 25px;
+.card {
+  margin: 0 20px 20px 20px;
+  border: 3px solid var(--dark);
+  border-radius: var(--border-radius);
 }
+
+.card-header {
+  color: var(--primary);
+  background-color: var(--dark);
+  padding: 2.5%;
+  border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
+}
+
+.card-body {
+  padding: 2.5%;
+}
+
+.form-label,
+.form-input,
+.form-textarea {
+  display: block;
+}
+
+.form-label {
+  font-size: 1.1rem;
+  margin: 0 0 0 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 3%;
+  margin: 5px 0;
+  font-size: 1.2rem;
+  border: 2px solid var(--light-dark);
+  border-radius: var(--border-radius);
+}
+
+.min-100-vh {
+  min-height: 100vh;
+}
+
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
 
 p {
   font-size: 1.5rem;
@@ -60,37 +117,6 @@ p {
     display: flex;
   }
 
-  .flex-start { 
-    justify-content: flex-start; 
-  }
-  
-  .flex-end { 
-    justify-content: flex-end; 
-  }  
-  .flex-end li {
-    background: gold;
-  }
-  
-  .center { 
-    justify-content: center; 
-  }  
-  .center li {
-    background: deepskyblue;
-  }
-  
-  .space-between { 
-    justify-content: space-between; 
-  }  
-  .space-between li {
-    background: lightgreen;
-  }
-  
-  .space-around { 
-    justify-content: space-around; 
-  }
-  .space-around li {
-    background: hotpink; 
-  }
   
   .space-evenly { 
     justify-content: space-evenly; 
