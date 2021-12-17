@@ -65,8 +65,8 @@ body {
 
 #form button:hover {
   color: white;
-  background-color: red;
-  border: 1px solid red;
+  background-color: rgb(148, 53, 185);
+  border: 1px solid rgb(148, 53, 185);
   transform: scale(1.1);
 }
 
@@ -80,9 +80,9 @@ body {
   gap: 10px;
   border-radius: 5px;
   padding: 12px;
-  color: red;
+  color: rgb(148, 53, 185);
   background-color: #ffe6e6;
-  border: 1px solid red;
+  border: 1px solid rgb(148, 53, 185);
 }
 
 .success {
