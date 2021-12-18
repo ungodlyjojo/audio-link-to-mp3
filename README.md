@@ -1,16 +1,15 @@
-# yt-2-mp3
+# ditto
 
 ## URL:
 
 ## Description
-A simple web application that will allows users to download and store music. Musics users download will be store in the local storage.
-
+A simple web application that will allows users to download and store music locally using a URL from YouTube.
 ## User Story
 ```
 - As A user
-- I Want to search a song through the app 
-- And have the option to download and
-- Store it in the app
+- I Want to covert a YouTube URL to an MP3 file
+- And have the option to download 
+- Store it locally
 ```
 
 ## Acceptance Criteria
@@ -21,8 +20,8 @@ A simple web application that will allows users to download and store music. Mus
 - 
 -
 ## Technologies Use
-<p><a href="">  <a></p>
-<p><a href=""> <a></p>
+nodeJS
+RapidAPI
 
 ## Contributors:
 Bartequa Blackmon
